@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
+
+:root {
+	--app-color1: #fff5cf;
+	--app-color2: #ffcc00;
+	--app-color3: #000000;
+    --app-color4: #ffffff;
+	--app-font1: 'Montserrat', sans-serif;
+
+}
+
+body,
+html {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	height: auto;
+    font-family: var(--app-font1);
+	font-size: 18px;
+	letter-spacing: 0;
+	line-height: 1.5;
+	font-weight: 400;
+	color: var(--app-color3);
+	background-color: var(--app-color1);
+	position: relative;
+    text-align: center;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+	word-break: break-word;
+}
+
+html:after,
+html:before {
+	clear: both;
+	display: table;
+	content: '';
+}
+
+html {
+	overflow-x: hidden;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    max-width: 1070px;
+    padding: 0 50px;
+    margin: 0 auto;
+    width: 100%;
+}
+.quote {
+    max-width: 860px;
+    margin: 0 auto;
+    background-color: var(--app-color4);
+    border: 4px solid var(--app-color3);
+    border-radius: 30px;
+    padding: 40px 40px;
+    text-align: center;
+    font-weight: 900;
+    font-family: var(--app-font1);
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-bottom: 10px solid;
+}
+.likes {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+
+}
+.button {
+    text-decoration: none;
+    text-align: center;
+    font-family: var(--app-font1);
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+    background-color: var(--app-color2);
+    color: var(--app-color3);
+    padding: 20px 100px;
+    border: 4px solid var(--app-color3);
+    border-radius: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    border-bottom: 10px solid;
+    position: relative;
+   
+}
+.button:hover ,
+.icon:hover {
+   transform: translateY(-4px);
+   transition: all .2s ease-in;
+
+}
+.icon {
+    border: 0;
+    background: url(../img/icon.png)no-repeat;
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    color: transparent;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom:;
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 33px;
+    }
+    .quote {
+        font-size: 16px;
+    }
+}
