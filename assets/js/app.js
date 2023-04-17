@@ -44,7 +44,9 @@ const quotes = [
 function generateQuote() {
     const quote = quotes[Math.floor(Math.random() * quotes.length)];
     document.querySelector(".quote").innerHTML = `"${quote}"`;
+    document.querySelector(".quote").style.display = "block";
 }
+
 
 let likes = 0;
 
